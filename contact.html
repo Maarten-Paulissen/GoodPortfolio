@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <video autoplay loop muted playsinline id="background-video">
+      <source src="videoback.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <header>
+      <img src="profielfoto.jpg" alt="Profile Picture" />
+      <nav>
+        <ul class="horizontal-list">
+          <li><a href="index.html" class="animated-link">Home</a></li>
+          <li><a href="projects.html" class="animated-link">Projects</a></li>
+          <li><a href="info.html" class="animated-link">Info</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Contact</h1>
+      <p>
+        If you have any questions or messages, feel free to reach out to me via
+        the form below:
+      </p>
+
+      <form
+        action="mailto:maartenpaulissen99@gmail.com"
+        method="POST"
+        enctype="text/plain"
+        class="contact-form"
+      >
+        <label for="name">Your Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+
+        <label for="message">Your Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Enter your message"
+          required
+        ></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </main>
+    <footer>
+      <p>&copy; 2025 Maarten Paulissen. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
